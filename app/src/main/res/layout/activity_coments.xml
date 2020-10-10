@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ComentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtComentsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Informe seu ComentsID"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/txtComentsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Informe seu Nome"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/txtComentsEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Informe seu Email"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/txtComentsBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Informe seu Comentário"
+            android:inputType="textPersonName"/>
+
+        <Button
+            android:id="@+id/btnAddComents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="adicionarComents"
+            android:text="Adicionar Comentário" />
+
+        <ListView
+            android:id="@+id/listViewComents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
